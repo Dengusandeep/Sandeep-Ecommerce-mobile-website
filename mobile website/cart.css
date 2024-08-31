@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cart Table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.cart-table img {
+    width: 50px;
+    height: auto;
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.checkout-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 40px;
+}
+
+.reviews-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Payment Methods Section */
+.payment-methods {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.payment-methods h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.payment-table th, .payment-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.pay-now-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pay-now-btn:hover {
+    background-color: #0069d9;
+}
+
+/* Order Details Section */
+.order-details {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.order-details h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.order-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Order Tracking Section */
+.order-tracking {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.order-tracking h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.order-tracking p {
+    font-size: 18px;
+    margin: 10px 0;
+}

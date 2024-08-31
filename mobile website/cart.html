@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobilestore</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to your external CSS file for cart page -->
+</head>
+<body>
+    <header>
+        <ul class="nav-links">
+            <li><a href="products.html">product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p><strong>Subtotal:</strong> ₹<span id="cart-subtotal">0.00</span></p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Total:</strong> ₹<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="displayPaymentMethods()">Proceed to Checkout</button>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Product Reviews</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+        </div>
+
+        <!-- Payment Method Section (Initially Hidden) -->
+        <div class="payment-methods" id="payment-methods" style="display: none;">
+            <h2>Select Payment Method</h2>
+            <table class="payment-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cash on Delivery</td>
+                        <td>Pay with cash upon delivery.</td>
+                    </tr>
+                    <tr>
+                        <td>PhonePe</td>
+                        <td>Scan QR code with PhonePe app.</td>
+                    </tr>
+                    <tr>
+                        <td>Card Payment</td>
+                        <td>Pay securely using your credit/debit card.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="pay-now-btn" onclick="payNow()">Pay Now</button>
+        </div>
+
+        <!-- Order Details Section (Initially Hidden) -->
+        <div class="order-details" id="order-details" style="display: none;">
+            <h2>Order Details</h2>
+            <p><strong>Order ID:</strong> <span id="order-id">123456</span></p>
+            <p><strong>Order Date:</strong> <span id="order-date">2024-08-31</span></p>
+            <p><strong>Shipping Address:</strong> <span id="shipping-address">123 Main St, City, Country</span></p>
+        </div>
+
+        <!-- Order Tracking Section (Initially Hidden) -->
+        <div class="order-tracking" id="order-tracking" style="display: none;">
+            <h2>Track Your Order</h2>
+            <p><strong>Tracking Number:</strong> <span id="tracking-number">TRACK123456</span></p>
+            <p><strong>Status:</strong> <span id="order-status">In Transit</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript for cart functionality -->
+</body>
+</html>
